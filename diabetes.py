@@ -68,5 +68,5 @@ def lab():
 
     return render_template('prediction.html', form=form)
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()

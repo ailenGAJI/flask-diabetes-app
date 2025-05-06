@@ -7,19 +7,20 @@
 </head>
 <body>
   {% block navbar %}
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <div class="d-flex justify-content-start">
-        <a href="/index" class="btn btn-info me-2" role="button">Home</a>
-        <a href="/prediction" class="btn btn-info" role="button">FF Prediction</a>
+  <div class="container">
+    <div class="page-header">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+          <br>
+          <a href="/index" class="btn btn-info" role="button">Home</a>
+          <a href="/prediction" class="btn btn-info" role="button">Diagnostic</a>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
   {% endblock %}
 
-  <div class="container mt-3">
-    {% block content %}{% endblock %}
-  </div>
+  {% block content %}{% endblock %}
 
   <div class="container">
     <footer>&copy; Samkeun Kim</footer>
